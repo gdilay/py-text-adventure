@@ -35,7 +35,7 @@ def create_room(name, description, ends_game=False):
     GAME[name] = room
     return room
 
-def create_exit(source, destination, description, required_key=None, hidden=False):
+def create_exit(source, destination, description):
     """
     Rooms are useless if you can't get to them! This function connects source to destination (in one direction only.)
 
@@ -57,12 +57,6 @@ def create_exit(source, destination, description, required_key=None, hidden=Fals
         'destination': destination,
         'description': description
     }
-    # Is it locked?
-    if required_key:
-        exit['required_key'] = required_key
-    # Do we need to search for this?
-    if hidden:
-        exit['hidden'] = hidden
     source['exits'].append(exit)
     return exit
 
