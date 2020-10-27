@@ -1,7 +1,11 @@
 {
-  "START": {
-    "name": "START",
-    "description": "You are in the grand entrance hall of a large building.\nThe front door appears to be locked...\nHow did you get here?",
+  "__metadata__": {
+    "title": "Spooky Mansion",
+    "start": "entranceHall"
+  },
+  "entranceHall": {
+    "name": "entranceHall",
+    "description": "You are in the grand entrance hall of a large building.\nHow did you get here?",
     "exits": [
       {
         "destination": "basement",
@@ -14,27 +18,37 @@
       {
         "destination": "kitchen",
         "description": "There is a red door."
+      },
+      {
+        "destination": "outside",
+        "description": "The front door.",
+        "required_key": "Mansion Key"
       }
     ],
-    "ends_game": false
+    "items": []
   },
   "basement": {
     "name": "basement",
     "description": "You have found the basement of the mansion.\nIt is darker down here.\nYou get the sense a secret is nearby, but you only see the stairs you came from.",
     "exits": [
       {
-        "destination": "START",
+        "destination": "entranceHall",
         "description": "There are stairs leading up."
+      },
+      {
+        "destination": "secretRoom",
+        "description": "A trapdoor was hidden amongst the dust.",
+        "hidden": true
       }
     ],
-    "ends_game": false
+    "items": []
   },
   "attic": {
     "name": "attic",
     "description": "Something rustles in the rafters as you enter the attic. Creepy.\nIt's big and dark up here.",
     "exits": [
       {
-        "destination": "START",
+        "destination": "entranceHall",
         "description": "There are stairs leading down."
       },
       {
@@ -42,7 +56,7 @@
         "description": "There is an archway."
       }
     ],
-    "ends_game": false
+    "items": []
   },
   "attic2": {
     "name": "attic2",
@@ -61,7 +75,7 @@
         "description": "There is a dumbwaiter near the chimney."
       }
     ],
-    "ends_game": false
+    "items": []
   },
   "balcony": {
     "name": "balcony",
@@ -72,12 +86,15 @@
         "description": "Step into the light."
       }
     ],
-    "ends_game": false
+    "items": [
+      "Mansion Key"
+    ]
   },
   "aliens": {
     "name": "aliens",
     "description": "The aliens take you aboard their spaceship.\n...\nI guess you escaped.",
     "exits": [],
+    "items": [],
     "ends_game": true
   },
   "kitchen": {
@@ -93,7 +110,7 @@
         "description": "There is a dumbwaiter."
       }
     ],
-    "ends_game": false
+    "items": []
   },
   "dumbwaiter": {
     "name": "dumbwaiter",
@@ -112,7 +129,7 @@
         "description": "Exit at the bottom."
       }
     ],
-    "ends_game": false
+    "items": []
   },
   "secretRoom": {
     "name": "secretRoom",
@@ -131,7 +148,7 @@
         "description": "Get back in the dumbwaiter."
       }
     ],
-    "ends_game": false
+    "items": []
   },
   "crypt": {
     "name": "crypt",
@@ -142,12 +159,13 @@
         "description": "There are stairs leading up."
       }
     ],
-    "ends_game": false
+    "items": []
   },
   "outside": {
     "name": "outside",
     "description": "You step out into the night.\n\nIt smells like freedom.\n",
     "exits": [],
+    "items": [],
     "ends_game": true
   },
   "hallway0": {
@@ -163,7 +181,7 @@
         "description": "Go forward."
       }
     ],
-    "ends_game": false
+    "items": []
   },
   "hallway1": {
     "name": "hallway1",
@@ -178,7 +196,7 @@
         "description": "Go forward."
       }
     ],
-    "ends_game": false
+    "items": []
   },
   "hallway2": {
     "name": "hallway2",
@@ -193,6 +211,6 @@
         "description": "Go forward."
       }
     ],
-    "ends_game": false
+    "items": []
   }
 }
