@@ -13,6 +13,11 @@ The goal of this project is to work on a text adventure engine that is run out o
 
 You are about to play 'Adventure'! Good luck!
 
+
+You're in a lecture hall, for some reason.
+  1. A door leads into the hall.
+> nap
+I don't understand 'nap'...
 You're in a lecture hall, for some reason.
   1. A door leads into the hall.
 > 1
