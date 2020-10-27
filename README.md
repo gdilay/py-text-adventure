@@ -59,7 +59,8 @@ You've escaped! It's cold out.
 
 ### Bigger Challenges: (~10 each)
 
-- (10) (Creative) Create your own adventure. It should come with some helper-functions; for example, if you want to do something in the style of the mansion, write a helper function that ``create_closet(room)`` that creates a closet for whatever room you call it on; (all or most closets can be boring) but creates a new room and two exits as needed.
+- (10) (Creative) Create your own adventure. It should come with some helper-functions.
+    - For example, if you want to do something in the style of the mansion, write a helper function that ``create_closet(room)`` that creates a closet for whatever room you call it on; (all or most closets can be boring) but creates a new room and two exits as needed.
 - (8) (Cats) Create a black cat that wanders from room to room. Announce the existence of the cat when you happen to be in the same place as it.
     - (4) If the player has some sort of cat treat (raw fish?), have it purr and not leave the room if they're in the same place.
 - (8) (Software Engineering) -- Get your code/project onto Github! 
