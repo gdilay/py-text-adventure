@@ -44,7 +44,7 @@ You've escaped! It's cold out.
     - I suggest drawing a map.
     - Once you implement items there are three exits to the game; before there are just two.
 
-## What can we add? Smaller tasks (~4 each)
+### What can we add? Smaller tasks (~4 each ... up to 42)
 
 - (4) When the user types ``help``; print the instructions again. Add this option to the listing of instructions. You'll need Python's ``continue`` statement.
 - If it's not nailed down...
@@ -57,7 +57,7 @@ You've escaped! It's cold out.
 - (6) ***No bridges to nowhere:*** write a function that loops over every room, then over every exit in each room, to ensure that no exits point at non-existent rooms. Typos happen; this can catch them!
 - (6) Investigate Python's ``time`` module so that you can keep track of how many minutes and seconds the user has been trapped in your game.
 
-### Bigger Challenges: (~10 each)
+### Bigger Challenges: (~10 each ... up to 64)
 
 - (10) (Creative) Create your own adventure. It should come with some helper-functions.
     - For example, if you want to do something in the style of the mansion, write a helper function that ``create_closet(room)`` that creates a closet for whatever room you call it on; (all or most closets can be boring) but creates a new room and two exits as needed.
