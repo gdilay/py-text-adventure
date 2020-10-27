@@ -72,7 +72,7 @@ def create_exit(source, destination, description, required_key=None, hidden=Fals
 ##
 classroom = create_room("classroom", "You're in a lecture hall, for some reason.")
 hallway = create_room("hallway", "This is a hallway with many locked doors.")
-staircase = create_room("staircase", "The staircase goes downward toward.")
+staircase = create_room("staircase", "The staircase leads downward.")
 outside = create_room("outside", "You've escaped! It's cold out.", ends_game=True)
 
 ##

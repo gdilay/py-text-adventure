@@ -22,7 +22,7 @@ This is a hallway with many locked doors.
   2. A door with the words STAIRS is stuck open.
 > 2
 ...
-The staircase goes downward toward.
+The staircase leads downward.
   1. Nevermind; go back to the hallway.
   2. A door at the bottom of the stairs has a red, glowing, EXIT sign.
 > 2
