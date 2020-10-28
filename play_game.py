@@ -75,8 +75,7 @@ def find_usable_exits(room, stuff):
         if "required_key" in exit:
             if exit["required_key"] in stuff:
                 usable.append(exit)
-            else:
-                continue
+            continue
         usable.append(exit)
     return usable
 
