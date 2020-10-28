@@ -43,7 +43,7 @@ You've escaped! It's cold out.
 1. Click on the green "Code" button and then on the "Download Zip".
 2. Find this ``main.zip`` in your downloads folder and extract it to a place you'll want to work on the code.
 3. Open ``play_game.py`` in Thonny, and play the "Adventure" game (default).
-4. Read (for understanding) both ``play_game.py`` and ``adventure.py``.
+4. Read (for understanding) both ``play_game.py`` and ``adventure.py``. ``play_game.py`` loads the game from ``adventure.json`` and runs it in a generic way. ``adventure.py`` creates ``adventure.json`` because creating the data directly would be tedious and error-prone.
 5. Modify ``adventure.py`` to have another classroom. Run ``adventure.py`` to regenerate ``adventure.json``, and play it again.
 6. Modify ``play_game.py`` so you can explore the "Spooky Mansion" inside ``spooky_mansion.json``.
     - I suggest drawing a map.
@@ -53,7 +53,7 @@ You've escaped! It's cold out.
 
 - (4) When the user types ``help``; print the instructions again. Add this option to the listing of instructions. You'll need Python's ``continue`` statement.
 - If it's not nailed down...
-    - (4) Make a ``stuff`` command that prints out the users items or "You have nothing."
+    - (4) Make a ``stuff`` command that prints out the user's items or "You have nothing."
     - (4) After printing the description of a "room", print out any items that exist "for the taking".
     - (4) Make a ``take`` command work to take all the items and put them in the player's ``stuff``.
     - (4) Make a ``drop`` command that lets the user drop a specific item, and attach it to the current location. (It should be there if they decide to come back for it).
