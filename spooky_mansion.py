@@ -77,6 +77,7 @@ create_exit(attic2, "dumbwaiter", "There is a dumbwaiter near the chimney.")
 balcony = create_room("balcony", """There's a strange light here on the balcony.""")
 balcony["items"].append(front_door_key)
 create_exit(balcony, "aliens", "Step into the light.")
+create_exit(balcony, "attic2", "Go back inside.")
 
 create_room("aliens", """The aliens take you aboard their spaceship.
 ...
