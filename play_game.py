@@ -2,7 +2,7 @@ import json
 
 def main():
     # TODO: allow them to choose from multiple JSON files?
-    with open('adventure.json') as fp:
+    with open('spooky_mansion.json') as fp:
         game = json.load(fp)
     print_instructions()
     print("You are about to play '{}'! Good luck!".format(game['__metadata__']['title']))
