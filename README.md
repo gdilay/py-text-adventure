@@ -57,10 +57,12 @@ You've escaped! It's cold out.
     - (4) After printing the description of a "room", print out any items that exist "for the taking".
     - (4) Make a ``take`` command work to take all the items and put them in the player's ``stuff``.
     - (4) Make a ``drop`` command that lets the user drop a specific item, and attach it to the current location. (It should be there if they decide to come back for it).
+    - (6) Locked doors should appear, even if they're not usable -- modify ``find_usable_exits`` and then modify the code that moves from place to place to detect locked exits that are not passable (given the player's current ``stuff``!) and print out a message like ``"You try to open the door, but it's locked!"``.
 - (4) Make a ``search`` command that makes any ``hidden`` exits visible (and selectable).
 - (6) Use ``os.listdir`` to list the files in the current directory; find all the ``.json`` files, and ask the user which game they would like to play in the ``main`` of ``play_game.py``.
 - (6) ***No bridges to nowhere:*** write a function that loops over every room, then over every exit in each room, to ensure that no exits point at non-existent rooms. Typos happen; this can catch them!
 - (6) Investigate Python's ``time`` module so that you can keep track of how many minutes and seconds the user has been trapped in your game.
+
 
 ### Bigger Challenges: (~10 each ... up to 64)
 
